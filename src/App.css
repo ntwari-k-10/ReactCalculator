@@ -1,0 +1,77 @@
+.numbers{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:0px;
+  flex: 3;
+}
+.zero{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.numbers p{
+  border: 1px solid rgb(165, 162, 162);
+  padding: 30px;
+  margin: 0px;
+  font-weight:500;
+  font-size: larger;
+  background-color: rgb(216, 221, 224);
+  font-size: 34px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+input{
+  background-color: rgba(102, 115, 119, 0.829);
+  border: none;
+  width: 100%;
+  height: 80px;
+  color: white;
+  vertical-align: baseline;
+  font-size: 50px;
+  text-align: right;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+input:focus{
+  border:none;
+  outline: none;
+}
+
+.container{
+  width: 500px;
+  margin: 50px auto;
+
+}
+.numberAndSigns{
+  display: flex;
+  margin: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.15ms;
+  cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="rgba(102,99,99,0.596)"/></svg>'), auto;
+}
+.numberAndSigns:active {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"  stroke="black" fill="rgba(51,50,50,0.8)"/></svg>'), auto;
+}
+
+.signs{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.signs p{
+    border: 1px solid rgb(165, 162, 162);
+    padding: 40px;
+     margin: 0px;
+     background-color: rgb(245, 128, 50);
+     color: white;
+     vertical-align: middle;
+     font-weight: 600;
+     font-size: larger; 
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+     font-size: 30px; 
+     border-right: none; 
+}
